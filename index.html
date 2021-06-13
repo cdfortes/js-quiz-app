@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Quiz | Você conhece o JS?</title>
+  </head>
+  <body>
+    <div class="intro py-3 bg-warning text-center">
+      <div class="container">
+        <h2 class="text-dark display-3 my-4">Quiz - JS</h2>
+      </div>
+    </div>
+
+    <div class="quiz py-4 bg-dark">
+      <div class="container">
+        <h2 class="my-5 text-white">Você conhece o JS?</h2>
+
+        <form class="quiz-form text-white">
+          <div class="my-5">
+            <p class="lead font-weight-bolder">
+              1. Dentro de qual elemento HTML colocamos o JavaScript?
+            </p>
+            <div class="form-check my-2 text-white">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion1" value="A" checked />
+                &lt;js&gt;
+              </label>
+            </div>
+            <div class="form-check my-2 text-white">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion1" value="B" />
+                &lt;script&gt;
+              </label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-bolder">
+              2. Onde é área de uma página HTML mais recomendada para inserir um JavaScript?
+            </p>
+            <div class="form-check my-2 text-white">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion2" value="A" checked />
+                Na Head &lt;head&gt;&lt;/head&gt;
+              </label>
+            </div>
+            <div class="form-check my-2 text-white">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion2" value="B" />
+                Na body &lt;body&gt;&lt;/body&gt;
+              </label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-bolder">3. JavaScript é igual ao Java.</p>
+            <div class="form-check my-2 text-white">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion3" value="A" checked />
+                Verdadeiro
+              </label>
+            </div>
+            <div class="form-check my-2 text-white">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion3" value="B" />
+                Falso
+              </label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-bolder">
+              4. JavaScript é uma linguagem case sensitive.
+            </p>
+            <div class="form-check my-2 text-white">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion4" value="A" checked />
+                Verdadeiro
+              </label>
+            </div>
+            <div class="form-check my-2 text-white">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion4" value="B" />
+                Falso
+              </label>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button class="btn bg-warning text-dark">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
