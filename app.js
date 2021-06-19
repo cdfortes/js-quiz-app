@@ -31,10 +31,13 @@ const animateFinalScore = () => {
   const timer = setInterval(() => {
     if (counter === score) {
       clearInterval(timer)
-      score = 0
     }
     finalScoreContainer.querySelector('span').textContent = `${counter++}%`
   }, 10)
+}
+
+const resetScore = () => {
+  score = 0
 }
 
 const handleFormSubmit = (event) => {
@@ -42,6 +45,7 @@ const handleFormSubmit = (event) => {
 
   const userAnswers = getUserAnswwers()
 
+  resetScore()
   calculateUserScore(userAnswers)
   showFinalScore()
   animateFinalScore()
